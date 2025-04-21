@@ -2,6 +2,7 @@ add :: Integer -> Integer -> Integer
 add x y = x+y -- nested mapping
 cadd (x,y) = x+y -- cartesian mapping
 a = 4
+b= 578498573
 
 data Mylist a = Lempty | Cons (a, Mylist a) deriving Show-- List = Int*List + NULL (1,(2,(3,Empty))) -- example
 
