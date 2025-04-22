@@ -79,3 +79,7 @@ g1 = (foldl add 0).(map double) . (filter (evenn))
 -- As you can see the functions are right associative and (a->b)->(c->a) output of the function to the right should match with the input of the function to the left
 
 iden x = x -- any function like this or where we can use multiple types are actually parameter polymorphism as they apply the same on different types.
+
+--2d them
+map2 f1 f2 [] = []
+map2 f1 f2 (a:b) = (map f1 (map f2 a))++(map2 f1 f2 b)
